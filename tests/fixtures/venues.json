@@ -1,0 +1,26 @@
+[
+  {
+    "venue": {"name": "Cedar & Salt", "address": "101 Pine St", "website": "https://cedarandsalt.example", "phone": "206-555-0101"},
+    "pages": [
+      {"url": "https://cedarandsalt.example/menu", "kind": "official",
+       "text": "Our menu includes a dedicated gluten-free menu prepared in a separate kitchen. We offer several vegan entrees every day. All chicken is certified halal. Our desserts are made without peanuts or tree nuts, and we are a peanut-free kitchen."},
+      {"url": "https://reddit.com/r/SeattleEats/comments/abc", "kind": "reddit",
+       "text": "Went to Cedar & Salt with my celiac friend and they were super careful, gluten-free menu is legit."}
+    ]
+  },
+  {
+    "venue": {"name": "Noodle Harbor", "address": "220 1st Ave", "website": "https://noodleharbor.example", "phone": "206-555-0102"},
+    "pages": [
+      {"url": "https://noodleharbor.example/faq", "kind": "official",
+       "text": "We offer vegetarian options. Please note: our kitchen has cross-contact with peanuts and shellfish and we cannot guarantee allergen-free preparation."},
+      {"url": "https://example-blog.test/noodle-harbor", "kind": "blog",
+       "text": "Noodle Harbor has a great vegan tofu pho and the staff confirmed the broth is plant-based."}
+    ]
+  },
+  {
+    "venue": {"name": "Mystery Grill", "address": "5 Pike Pl", "website": null, "phone": "206-555-0103"},
+    "pages": [
+      {"url": "https://mysterygrill.example", "kind": "official", "text": "Burgers, fries, and shakes. Open late."}
+    ]
+  }
+]

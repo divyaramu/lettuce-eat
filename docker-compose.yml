@@ -1,0 +1,24 @@
+# Sandbox: non-root, read-only FS, no capabilities, no privilege escalation, resource-limited.
+# Live scraping runs ONLY in here. Secrets come from .env (never baked into the image).
+services:
+  lettuce-eat:
+    build: .
+    env_file: .env
+    ports: ["127.0.0.1:8000:8000"]   # bound to localhost; tunnel (e.g. cloudflared) for demos
+    read_only: true
+    tmpfs: ["/tmp"]
+    cap_drop: ["ALL"]
+    security_opt: ["no-new-privileges:true"]
+    mem_limit: 512m
+    pids_limit: 200
+    cpus: 1.0
+  tests:
+    build: .
+    profiles: ["test"]
+    environment: { SOURCE_MODE: fixture }
+    command: ["python", "-m", "pytest", "-q"]
+    read_only: true
+    tmpfs: ["/tmp"]
+    cap_drop: ["ALL"]
+    network_mode: "none"            # tests prove nothing needs the internet
+    security_opt: ["no-new-privileges:true"]
