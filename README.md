@@ -1,6 +1,6 @@
 # Lettuce Eat
 
-Find restaurants where **every** member of a group has sourced, verifiable options (allergies, halal/kosher, vegan/vegetarian/gluten-free). Seattle demo.
+Find restaurants where **every** member of a group has sourced, verifiable options for various dietary restrictions.
 
 ## How credibility works
 Every claim shown is a **verbatim quote re-found in the fetched page text** (LLM can't invent evidence), with its URL.
